@@ -1,0 +1,8 @@
+<h1> Discover the <strong> <%= @cocktail.name %> </strong>  cocktail</h1>
+
+<ul>
+  <% @cocktail.doses.each do |cocktail| %>
+  <li><%= cocktail.ingredient.name %> </li>
+  <li><%= cocktail.description %> </li>
+  <% end %>
+</ul>

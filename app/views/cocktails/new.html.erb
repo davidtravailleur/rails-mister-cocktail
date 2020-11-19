@@ -1,0 +1,7 @@
+<h1>Create your own Coktail</h1>
+
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+  <%= f.association :ingredients, as: :check_boxes %>
+  <%= f.submit "Add ingredients to my cocktail"%>
+  <% end %>
